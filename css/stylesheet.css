@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;;
+}
+
+/* common */
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* color */
+.background-y-color{
+    background-color: #f4c430;
+}
+
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 40px;
+}
+
+nav li a{
+    text-decoration: none;
+}
