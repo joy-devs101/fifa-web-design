@@ -1,37 +1,56 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", sans-serif;;
+    font-family: "Host Grotesk", sans-serif;
 }
+
+.sans {
+    font-family: "Inter", sans-serif;
+}
+
+
+.host-font {
+    font-family: "Host Grotesk", sans-serif;
+}
+
 
 /* common */
 
-.flex{
+.flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.btn{
+.btn {
     padding: 18px 30px;
     border-radius: 10px;
     border: none;
     box-shadow: 0px 0 5px 0 rgba(0, 0, 0, 0.122);
     font-weight: bold;
+    font-size: 16px;
 }
 
 /* color */
-.background-y-color{
+.background-y-color {
     background-color: #f4c430;
 }
 
-.black{
+.black {
     color: #000102;
 }
 
-.gray{
+.gray {
     color: #575757;
+}
+
+.dark-gray {
+    color: #4D4D4D;
+}
+
+.white {
+    color: white;
 }
 
 /* nav */
@@ -40,7 +59,7 @@ nav {
     padding: 10px 24px;
 }
 
-nav ul{
+nav ul {
     list-style: none;
 }
 
@@ -49,21 +68,116 @@ nav ul li {
     font-size: 16px;
 }
 
-nav li a{
+nav li a {
     text-decoration: none;
 }
 
-.logo{
+.logo {
     font-size: 20px;
     padding-left: 10px;
+    font-weight: 900;
 }
 
-header{
-    height: 90vh;
+header {
+    height: 91vh;
     background-image: url(../asset/Background.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin: 0 10px;
     border-radius: 10px;
+    display: grid;
+    justify-content: start;
+    align-items: center;
+}
+
+
+.header-inner-section {
+    max-width: 480px;
+    margin-left: 50px;
+}
+
+.header-title {
+    font-size: 90px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.header-p {
+    font-size: 18px;
+    line-height: 2;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.book-ticket-btn {
+    padding: 20px 44px;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.stats {
+    margin: 10px 10px 100px 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    height: 230px;
+    padding: 30px;
+    justify-items: center;
+    align-items: center;
+}
+
+.stats-card-p {
+    font-size: 20px;
+}
+
+.stats-card-h1 {
+    font-size: 80px;
+}
+
+/* host city part */
+.explore-host-cities {
+    margin: auto;
+    max-width: 1300px;
+}
+
+.host-cities-card {
+    padding: 20px;
+    margin: 30px 0;
+}
+
+.host-cities-title {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+.right-part {
+    max-width: 1000px;
+}
+
+.right-part-heading {
+    font-size: 40px;
+}
+
+.host-cities-card {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 30px;
+}
+
+.right-part-p {
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+.right-part-li {
+    list-style-position: inside;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.discover-btn {
+    text-align: center;
+    margin: 20px 0;
 }
